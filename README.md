@@ -13,7 +13,7 @@ Simply type in the food recipe or food category your looking for and find the re
 
 Specify the API you are using and include a link. Show us a snippet of JSON returned by your API so we know you can access it and get the info you need
 https://api.edamam.com/search?q=friedchicken&app_id=c7450847&app_key=7c0a31766f9ea5c6b5de71b0693ce04d 	
-```JSON {
+ {
     "q": "friedchicken",
     "from": 0,
     "to": 10,
@@ -50,7 +50,7 @@ https://api.edamam.com/search?q=friedchicken&app_id=c7450847&app_key=7c0a31766f9
                     "1/2 - 3/4 tsp creole seasoning",
                     "1/4 tsp cayenne pepper",
                     "2 tbs olive oil"
-                ]}
+                ]
 
 ## Wireframes
 
