@@ -64,10 +64,11 @@ https://wireframe.cc/adOufi
 - Render food recipe. 
 - Render food image. 
 - Retrieve and render nutrional facts of data. 
+
+
+#### PostMVP 
+
 - Input checkboxes for ingredients. 
-
-#### PostMVP  
-
 - Category select button 
 - Random recipe feature
 - Show external links or instructional videos. 
