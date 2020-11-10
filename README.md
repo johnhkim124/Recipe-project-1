@@ -95,6 +95,7 @@ https://puu.sh/GLNTy/a18a7e0a30.png
 ## Timeframes
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
+| --- | :---: |  :---: | :---: | :---: |
 |Structuring HTML | M | 3hrs| hrs | hrs |
 |Basic styling CSS| S | 3hrs| hrs | hrs |
 |Setting/getting data from api | H | 3hrs| hrs | hrs |
