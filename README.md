@@ -58,7 +58,6 @@ https://wireframe.cc/adOufi
 ### MVP/PostMVP
 
 #### MVP 
-*These are examples only. Replace with your own MVP features.*
 
 - Have working search bar which retrieves data from api.
 - Retrieve data from api and implement food recipe.
@@ -68,7 +67,7 @@ https://wireframe.cc/adOufi
 - Input checkboxes for ingredients. 
 
 #### PostMVP  
-*These are examples only. Replace with your own Post-MVP features.*
+
 - Category select button 
 - Random recipe feature
 - Show external links or instructional videos. 
