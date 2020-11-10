@@ -63,17 +63,18 @@ https://wireframe.cc/adOufi
 - Retrieve data from api and implement food recipe.
 - Render food recipe. 
 - Render food image. 
-- Retrieve and render nutrional facts of data. 
+
 
 
 #### PostMVP 
 
+- Retrieve and render nutrional facts of data. 
 - Input checkboxes for ingredients. 
 - Category select button 
 - Random recipe feature
 - Show external links or instructional videos. 
 - Style it more in-depth.
-- Be able to store or save recipes.
+
 
 ## Project Schedule 
 
