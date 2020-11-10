@@ -50,7 +50,7 @@ https://api.edamam.com/search?q=friedchicken&app_id=c7450847&app_key=7c0a31766f9
                     "1/2 - 3/4 tsp creole seasoning",
                     "1/4 tsp cayenne pepper",
                     "2 tbs olive oil"
-                ]```
+                ]}
 
 ## Wireframes
 
