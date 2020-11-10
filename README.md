@@ -11,7 +11,6 @@ Simply type in the food recipe or food category your looking for and the recipe 
 
 ## API and Data Sample
 
-Specify the API you are using and include a link. Show us a snippet of JSON returned by your API so we know you can access it and get the info you need
 https://api.edamam.com/search?q=friedchicken&app_id=c7450847&app_key=7c0a31766f9ea5c6b5de71b0693ce04d 	
  ```JSON{
     "q": "friedchicken",
@@ -54,13 +53,9 @@ https://api.edamam.com/search?q=friedchicken&app_id=c7450847&app_key=7c0a31766f9
 
 ## Wireframes
 
-Upload images of your wireframes to an image hosting site or add them to an assets folder in your repo and link them here with a description of each specific wireframe.
-
 https://wireframe.cc/adOufi
 
 ### MVP/PostMVP
-
-The functionality will then be divided into two separate lists: MPV and PostMVP.  Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion. 
 
 #### MVP 
 *These are examples only. Replace with your own MVP features.*
@@ -80,9 +75,7 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 - Style it more in-depth.
 - Be able to store or save recipes.
 
-## Project Schedule
-
-This schedule will be used to keep track of your progress throughout the week and align with our expectations.  
+## Project Schedule 
 
 You are **responsible** for scheduling time with your squad to seek approval for each deliverable by the end of the corresponding day, excluding `Saturday` and `Sunday`.
 
@@ -98,14 +91,9 @@ You are **responsible** for scheduling time with your squad to seek approval for
 
 ## Priority Matrix
 
-Include a full list of features that have been prioritized based on the `Time and Importance` Matrix.  Link this image in a similar manner to your wireframes
 https://puu.sh/GLNTy/a18a7e0a30.png
 
 ## Timeframes
-
-Tell us how long you anticipate spending on each area of development. Be sure to consider how many hours a day you plan to be coding and how many days you have available until presentation day. Students usally put in around 40+ hours into their project 1.
-
-Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe. Throughout your project, keep track of your Time Invested and Actual Time and update your README regularly.
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 |Structuring HTML | M | 3hrs| hrs | hrs |
