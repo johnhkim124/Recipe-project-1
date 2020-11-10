@@ -97,13 +97,13 @@ https://puu.sh/GLNTy/a18a7e0a30.png
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
 |Structuring HTML | M | 3hrs| hrs | hrs |
-|Basic styling CSS| S | 3hrs| hrs | hrs |
+|Basic styling CSS| L | 3hrs| hrs | hrs |
 |Setting/getting data from api | H | 3hrs| hrs | hrs |
 |JS structuring| H | 5hrs| hrs | hrs |
 |Rendering data recipe| H | 3hrs| hrs | hrs |
 |Rendering images| H | 2hrs | hrs | hrs |
-|Advanced styling| S | 3hrs | hrs | hrs |
-|Post/MVP| S | 8hrs | hrs | hrs |
+|Advanced styling| L | 3hrs | hrs | hrs |
+|Post/MVP| L | 8hrs | hrs | hrs |
 | Total | H | 30hrs| hrs | hrs |
 
 
