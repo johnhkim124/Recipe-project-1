@@ -7,7 +7,7 @@ url
 ## Project Description
 
 A searching website/database where you can search and look up foods or categories of foods you'd like to cook. 
-Simply type in the food recipe or food category your looking for and find the recipe you want. 
+Simply type in the food recipe or food category your looking for and the recipe will show up as well as other information such as nutrional facts. 
 
 ## API and Data Sample
 
