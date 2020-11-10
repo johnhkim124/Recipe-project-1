@@ -1,0 +1,42 @@
+body {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.icon {
+  background-color: aqua;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+}
+
+.searchBar {
+  background-color: aquamarine;
+  display: flex;
+  justify-content: center;
+}
+
+.main {
+ border: solid green 5px;
+ display: flex;
+ height: 500px;
+}
+
+.recipeImg {
+  background-color: red;
+}
+
+.ingredients {
+  background-color: yellow;
+  width: 100%;
+}
+
+.recipe{
+  background-color: purple;
+  width: 100%;
+}
+
+footer{
+  background-color: orange;
+  display: flex;
+}
