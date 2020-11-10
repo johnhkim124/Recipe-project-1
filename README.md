@@ -12,7 +12,7 @@ Simply type in the food recipe or food category your looking for and the recipe 
 ## API and Data Sample
 
 https://api.edamam.com/search?q=friedchicken&app_id=c7450847&app_key=7c0a31766f9ea5c6b5de71b0693ce04d 	
- ```JSON{
+ {
     "q": "friedchicken",
     "from": 0,
     "to": 10,
