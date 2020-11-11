@@ -10,6 +10,7 @@ const getRecipe = async (foodSearch) => {
     // console.log(searched)
     let recipe = response.data.hits[0].recipe
     console.log(recipe);
+    removeImage();
     renderImg(recipe);
     renderIngredients(recipe);
     renderNutritional(recipe)
@@ -18,7 +19,7 @@ const getRecipe = async (foodSearch) => {
     console.log(error);
   }
 }
-getRecipe("fried pickles")
+
 // getRecipe("fried pickles")
 
 //make function that renders data
@@ -28,18 +29,26 @@ const renderImg = (recipe) => {
 
   let recipeImg = document.createElement("img");
   recipeImg.setAttribute("src", recipe.image);
+
   recipeImageDiv.append(recipeImg);
   // console.log(recipeImg)
 
 }
 
 const renderIngredients = (recipe) => {
-  const ingredientUl = document.querySelector("ul")
+  // const ingredientUl = document.querySelector("ul")
   const ingredientDiv = document.querySelector(".ingredients")
 
   let foodTitle = document.createElement("h3");
   foodTitle.textContent = recipe.label;
   ingredientDiv.prepend(foodTitle)
+
+  let ingredients = document.createElement("h4");
+  ingredients.textContent = "Ingredients:"
+  foodTitle.append(ingredients)
+
+  let ingredientUl = document.createElement("ul")
+  foodTitle.appendChild(ingredientUl);
 
   for (let i = 0; i < recipe.ingredientLines.length; i++) {
     let ingredientLi = document.createElement("li")
@@ -58,6 +67,7 @@ const renderNutritional = (recipe) => {
   const recipeDiv = document.querySelector(".recipe")
   let nutrients = recipe.totalNutrients;
 
+
   for (let key in nutrients) {
     let quantity = Math.round(nutrients[key].quantity)
     // console.log(nutrients[key].label)
@@ -69,4 +79,30 @@ const renderNutritional = (recipe) => {
 
     recipeDiv.appendChild(nutrientsP)
   }
+}
+
+
+const searchButton = document.querySelector("button")
+const searchInput = document.querySelector("input")
+
+searchButton.addEventListener("click", () => {
+  console.log(searchInput.value)
+  getRecipe(searchInput.value)
+})
+
+const removeImage = () => {
+  const imageDiv = document.querySelector(".recipeImg")
+  const recipeDiv = document.querySelector(".recipe")
+
+
+  while(imageDiv.firstChild) {
+    imageDiv.removeChild(imageDiv.lastChild);
+  }
+
+  while(recipeDiv.firstChild) {
+    recipeDiv.removeChild(recipeDiv.lastChild);
+  }
+
+
+
 }
