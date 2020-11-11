@@ -12,7 +12,7 @@ body {
 }
 
 .searchBar {
-  background-color: aquamarine;
+
   display: flex;
   justify-content: center;
 }
@@ -25,20 +25,24 @@ body {
 
 .recipeImg {
   background-color: red;
+  padding: 15px;
 }
 
 .ingredients {
   background-color: yellow;
   width: 100%;
+  padding: 15px;
 }
 
 .recipe{
-
   width: 100%;
+  padding: 15px;
+  height: 100%;
 
 }
 
 footer{
   background-color: orange;
   display: flex;
+
 }
