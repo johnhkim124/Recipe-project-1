@@ -12,7 +12,7 @@ const getRecipe = async (foodSearch) => {
     console.log(recipe);
     renderImg(recipe);
     renderIngredients(recipe);
-
+    renderNutritional(recipe)
   }
   catch (error) {
     console.log(error);
@@ -35,6 +35,12 @@ const renderImg = (recipe) => {
 
 const renderIngredients = (recipe) => {
   const ingredientUl = document.querySelector("ul")
+  const ingredientDiv = document.querySelector(".ingredients")
+
+  let foodTitle = document.createElement("h3");
+  foodTitle.textContent = recipe.label;
+  ingredientDiv.prepend(foodTitle)
+
   for (let i = 0; i < recipe.ingredientLines.length; i++) {
     let ingredientLi = document.createElement("li")
     ingredientLi.textContent = (recipe.ingredientLines[i])
@@ -46,4 +52,21 @@ const renderIngredients = (recipe) => {
   instructions.textContent = "Link to instructions"
   recipeDiv.appendChild(instructions)
 
+}
+
+const renderNutritional = (recipe) => {
+  const recipeDiv = document.querySelector(".recipe")
+  let nutrients = recipe.totalNutrients;
+
+  for (let key in nutrients) {
+    let quantity = Math.round(nutrients[key].quantity)
+    // console.log(nutrients[key].label)
+    // console.log(nutrients[key].quantity)
+    // console.log(nutrients[key].unit)
+
+    let nutrientsP = document.createElement("p")
+    nutrientsP.textContent = `${nutrients[key].label}: ${quantity} ${nutrients[key].unit}`
+
+    recipeDiv.appendChild(nutrientsP)
+  }
 }
