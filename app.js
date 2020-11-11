@@ -93,7 +93,7 @@ searchButton.addEventListener("click", () => {
 const removeImage = () => {
   const imageDiv = document.querySelector(".recipeImg")
   const recipeDiv = document.querySelector(".recipe")
-
+  const ingredientDiv = document.querySelector(".ingredients")
 
   while(imageDiv.firstChild) {
     imageDiv.removeChild(imageDiv.lastChild);
@@ -103,6 +103,8 @@ const removeImage = () => {
     recipeDiv.removeChild(recipeDiv.lastChild);
   }
 
-
+  while(ingredientDiv.firstChild) {
+    ingredientDiv.removeChild(ingredientDiv.lastChild);
+  }
 
 }
