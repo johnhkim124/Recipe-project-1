@@ -88,15 +88,23 @@ const searchButton = document.querySelector("#search")
 const searchInput = document.querySelector("input")
 
 searchButton.addEventListener("click", () => {
+  const imgDiv = document.querySelector(".recipeImg");
+  const ingredientDiv = document.querySelector(".ingredients")
+
   console.log(searchInput.value)
+  num = 0;
   getRecipe(searchInput.value)
+
+  imgDiv.classList.add("blackBorder") //gives dividing black borders
+  ingredientDiv.classList.add("blackBorder")
+
 })
 
 
 const nextButton = document.querySelector("#next")
 
 nextButton.addEventListener("click", () => {
-  if(num < 10){
+  if (num < 10) {
     num = num + 1;
   }
   getRecipe(searchInput.value);
@@ -116,15 +124,15 @@ const removeImage = () => {
   const recipeDiv = document.querySelector(".recipe")
   const ingredientDiv = document.querySelector(".ingredients")
 
-  while(imageDiv.firstChild) {
+  while (imageDiv.firstChild) {
     imageDiv.removeChild(imageDiv.lastChild);
   }
 
-  while(recipeDiv.firstChild) {
+  while (recipeDiv.firstChild) {
     recipeDiv.removeChild(recipeDiv.lastChild);
   }
 
-  while(ingredientDiv.firstChild) {
+  while (ingredientDiv.firstChild) {
     ingredientDiv.removeChild(ingredientDiv.lastChild);
   }
 

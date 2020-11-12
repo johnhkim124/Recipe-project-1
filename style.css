@@ -1,44 +1,95 @@
-body {
-  max-width: 1300px;
-  margin: 0 auto;
-  background-image: url("")
+html{
+  font-family: 'Lora', serif;
 }
+body {
+  max-width: 1500px;
+  margin: 0 auto;
+  background-image: url("https://images.pexels.com/photos/4199142/pexels-photo-4199142.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+
+}
+
+.navbar {
+  background-color: rgba(0, 0, 0);
+  display: flex;
+
+}
+
+.navbar a {
+  padding: 12px 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+}
+
+.navbar a:hover {
+  background-color: rgb(209, 209, 209);
+}
+
+.signDiv {
+  display:flex;
+  justify-content: flex-end;
+}
+
 
 .icon {
 
   height: 250px;
   display: flex;
   justify-content: center;
+  align-items: flex-end;
+  background-image: url("https://images.pexels.com/photos/4033296/pexels-photo-4033296.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+
 }
 
 .searchBar {
 
   display: flex;
   justify-content: center;
+  margin: 10px;
+  background-color:rgba(0, 0, 0);
+  margin: 0;
+  padding: 10px;
+}
+
+.searchBar span {
+  color: white;
 }
 
 .main {
- border: solid green 5px;
+
  display: flex;
- height: 500px;
+ max-height: 100%;
 }
 
 .recipeImg {
-  background-color: red;
+
   padding: 15px;
+  background-color: white;
+
 }
 
 .ingredients {
-  background-color: yellow;
+
   width: 100%;
   padding: 15px;
+  overflow: auto;
+  background-color: white;
+
+}
+
+.blackBorder{
+  border-right: solid black 2px;
 }
 
 .recipe{
   width: 100%;
   padding: 15px;
-  height: 100%;
 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  overflow: auto;
+  background-color: white;
 }
 
 footer{
