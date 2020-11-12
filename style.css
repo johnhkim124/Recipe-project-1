@@ -2,6 +2,7 @@ html{
   font-family: 'Lora', serif;
 }
 body {
+  width: 80%;
   max-width: 1500px;
   margin: 0 auto;
   background-image: url("https://images.pexels.com/photos/4199142/pexels-photo-4199142.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
@@ -59,26 +60,29 @@ body {
 
  display: flex;
  max-height: 100%;
+
 }
 
 .recipeImg {
 
   padding: 15px;
   background-color: white;
-
+  width: 90%;
+  display: flex;
+  justify-content: center;
 }
 
 .ingredients {
 
-  width: 100%;
+
   padding: 15px;
   overflow: auto;
   background-color: white;
-
+  width: 90%;
 }
 
 .recipe{
-  width: 100%;
+
   padding: 15px;
 
   display: flex;
@@ -86,21 +90,49 @@ body {
   justify-content: space-evenly;
   overflow: auto;
   background-color: white;
+  width: 90%;
 }
 
 .imgStyle{
-  border-radius: 20px;
+  border-radius: 50px;
+  width: 300px;
+  height: 300px;
 
 }
 
 .blackBorder{
-  border-right: solid black 2px;
+  border: solid black 2px;
+}
+
+@media (max-width: 1000px) {
+  body {
+    width: 95%;
+  }
+
+}
+
+@media (max-width: 700px) {
+  body {
+    width: 100%;
+  }
+  .navbar {
+    flex-direction: column;
+  }
+  .main {
+    flex-direction: column;
+    width:80%;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
 }
 
 
 
-footer{
-  background-color: orange;
-  display: flex;
 
+footer{
+  background-color: rgba(25, 25, 25, 0.3);
+  display: flex;
+  justify-content: center;
+  font-size: 11px;
 }
