@@ -82,8 +82,8 @@ You are **responsible** for scheduling time with your squad to seek approval for
 
 |  Day | Deliverable | Status
 |---|---| ---|
-|Nov 9| Finish project application/find good api| Incomplete
-|Nov 10| Project Approval/Starting| Incomplete
+|Nov 9| Finish project application/find good api| Complete
+|Nov 10| Project Approval/Starting| Complete
 |Nov 12| Core Structure of HTML/CSS | Incomplete
 |Nov 13| Structure js/api rendering data| Incomplete
 |Nov 14| MVP completion | Incomplete
@@ -98,14 +98,14 @@ https://puu.sh/GLNTy/a18a7e0a30.png
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-|Structuring HTML | M | 3hrs| hrs | hrs |
-|Basic styling CSS| L | 3hrs| hrs | hrs |
-|Setting/getting data from api | H | 3hrs| hrs | hrs |
-|JS structuring| H | 5hrs| hrs | hrs |
-|Rendering data recipe| H | 3hrs| hrs | hrs |
-|Rendering images| H | 2hrs | hrs | hrs |
-|Advanced styling| L | 3hrs | hrs | hrs |
-|Post/MVP| L | 8hrs | hrs | hrs |
+|Structuring HTML | M | 3hrs| 3hrs | hrs |
+|Basic styling CSS| L | 3hrs| 3hrs | hrs |
+|Setting/getting data from api | H | 3hrs| 3hrs | hrs |
+|JS structuring| H | 5hrs| 7hrs | hrs |
+|Rendering data recipe| H | 3hrs| 3hrs | hrs |
+|Rendering images| H | 2hrs | 3hrs | hrs |
+|Advanced styling| L | 3hrs | 3hrs | hrs |
+|Post/MVP| L | 8hrs | 10hrs | hrs |
 | Total | H | 30hrs| hrs | hrs |
 
 

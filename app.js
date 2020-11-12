@@ -31,6 +31,7 @@ const renderImg = (recipe) => {
 
   let recipeImg = document.createElement("img");
   recipeImg.setAttribute("src", recipe.image);
+  recipeImg.classList.add("imgStyle");
 
   recipeImageDiv.append(recipeImg);
   // console.log(recipeImg)
@@ -111,7 +112,6 @@ nextButton.addEventListener("click", () => {
   return num;
 
 })
-
 
 
 

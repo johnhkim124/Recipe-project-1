@@ -77,10 +77,6 @@ body {
 
 }
 
-.blackBorder{
-  border-right: solid black 2px;
-}
-
 .recipe{
   width: 100%;
   padding: 15px;
@@ -91,6 +87,17 @@ body {
   overflow: auto;
   background-color: white;
 }
+
+.imgStyle{
+  border-radius: 20px;
+
+}
+
+.blackBorder{
+  border-right: solid black 2px;
+}
+
+
 
 footer{
   background-color: orange;
