@@ -29,6 +29,10 @@ const getRecipe = async (foodSearch) => {
 const renderImg = (recipe) => {
   const recipeImageDiv = document.querySelector(".recipeImg")
 
+  let foodTitle = document.createElement("h3");
+  foodTitle.textContent = recipe.label;
+  recipeImageDiv.prepend(foodTitle)
+
   let recipeImg = document.createElement("img");
   recipeImg.setAttribute("src", recipe.image);
   recipeImg.classList.add("imgStyle");
@@ -42,21 +46,21 @@ const renderIngredients = (recipe) => {
   // const ingredientUl = document.querySelector("ul")
   const ingredientDiv = document.querySelector(".ingredients")
 
-  let foodTitle = document.createElement("h3");
-  foodTitle.textContent = recipe.label;
-  ingredientDiv.prepend(foodTitle)
-
   let ingredients = document.createElement("h4");
   ingredients.textContent = "Ingredients:"
-  foodTitle.append(ingredients)
+  ingredientDiv.append(ingredients)
 
   let ingredientUl = document.createElement("ul")
-  foodTitle.appendChild(ingredientUl);
+  ingredientDiv.appendChild(ingredientUl);
 
   for (let i = 0; i < recipe.ingredientLines.length; i++) {
     let ingredientLi = document.createElement("li")
     ingredientLi.textContent = (recipe.ingredientLines[i])
     ingredientUl.appendChild(ingredientLi);
+
+    let checkBox = document.createElement("input")
+    checkBox.setAttribute("type", "checkbox")
+    ingredientLi.prepend(checkBox)
   }
   const recipeDiv = document.querySelector(".recipe")
   let instructions = document.createElement("a")
