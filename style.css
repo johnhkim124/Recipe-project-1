@@ -109,11 +109,12 @@ ul {
 }
 
 .recipe{
-  width: 70%;
+  width: 100%;
   padding: 15px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-around;
+  line-height: 25%;
   overflow: auto;
   margin: 10px;
 }
@@ -127,6 +128,7 @@ ul {
 
 .blackBorder{
   border: solid rgba(0, 0, 0, 0.2) 1px;
+  border-radius: 5px;
 }
 
 .whiteDiv {
