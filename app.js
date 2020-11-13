@@ -28,10 +28,12 @@ const getRecipe = async (foodSearch) => {
 
 const renderImg = (recipe) => {
   const recipeImageDiv = document.querySelector(".recipeImg")
+  const foodTitleDiv = document.querySelector(".foodTitle")
 
-  let foodTitle = document.createElement("h3");
+  let foodTitle = document.createElement("h2");
   foodTitle.textContent = recipe.label;
-  recipeImageDiv.prepend(foodTitle)
+  foodTitleDiv.appendChild(foodTitle)
+
 
   let recipeImg = document.createElement("img");
   recipeImg.setAttribute("src", recipe.image);
@@ -130,15 +132,11 @@ nextButton.addEventListener("click", () => {
 })
 
 
-
-
-
-
-
 const removeImage = () => {
   const imageDiv = document.querySelector(".recipeImg")
   const recipeDiv = document.querySelector(".recipe")
   const ingredientDiv = document.querySelector(".ingredients")
+  const titleDiv = document.querySelector(".foodTitle")
 
   while (imageDiv.firstChild) {
     imageDiv.removeChild(imageDiv.lastChild);
@@ -150,6 +148,10 @@ const removeImage = () => {
 
   while (ingredientDiv.firstChild) {
     ingredientDiv.removeChild(ingredientDiv.lastChild);
+  }
+
+  while (titleDiv.firstChild) {
+    titleDiv.removeChild(titleDiv.lastChild);
   }
 
 }

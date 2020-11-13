@@ -1,8 +1,10 @@
 html{
   font-family: 'Lora', serif;
+
 }
 body {
-  width: 80%;
+  width: 90%;
+  height: 100%;
   margin: 0 auto;
   background-image: url("joseph-gonzalez-fdlZBWIP0aM-unsplash.jpg");
   background-size: cover;
@@ -31,15 +33,19 @@ body {
   border-radius: 0 0 5px 5px;
 }
 
+.signUp {
+  position: absolute;
+  right: 98px;
+}
+
+.signIn {
+  position: absolute;
+  right: 20px;
+}
+
 .navbar a:hover {
   background-color: rgb(209, 209, 209);
 }
-
-.signDiv {
-  display:flex;
-  justify-content: flex-end;
-}
-
 
 .icon {
   height: 250px;
@@ -73,9 +79,13 @@ body {
 }
 
 .main {
- display: flex;
- max-height: 100%;
+  display: flex;
+  max-height: 80%;
+  max-width: 80%;
+}
 
+.foodTitle{
+  color: white;
 }
 
 .recipeImg {
@@ -84,6 +94,7 @@ body {
   display: flex;
   justify-content: center;
   margin: 10px;
+
 }
 
 ul {
@@ -108,7 +119,7 @@ ul {
 }
 
 .imgStyle{
-  border-radius: 300px;
+  border-radius: 75px;
   width: 300px;
   height: 300px;
 
@@ -124,12 +135,13 @@ ul {
 
 @media (max-width: 1000px) {
   body {
-    width: 95%;
+    width: 100%;
+
   }
 
 }
 
-@media (max-width: 700px) {
+@media (max-width: 900px) {
   body {
     width: 100%;
   }
@@ -149,21 +161,17 @@ ul {
     width: 80%;
     margin: 0 auto;
     max-width: 600px;
-
   }
+
 }
 
-
-
-
 .footer{
-  position: absolute;
+  position: fixed;
   bottom: 0;
-  background-color: black;
   color: white;
   justify-content: center;
   font-size: 11px;
-  width: 1500px;
+  width: 100%;
   text-align: center;
   background-color: rgba(86, 86, 86, 0.5);
   border-radius: 5px 5px 0 0;
