@@ -50,6 +50,11 @@ const renderIngredients = (recipe) => {
   ingredients.textContent = "Ingredients:"
   ingredientDiv.append(ingredients)
 
+  let yield = recipe.yield;
+  const yieldP = document.createElement("p");
+  yieldP.textContent = `Yield: ${yield}`
+  ingredientDiv.appendChild(yieldP);
+
   let ingredientUl = document.createElement("ul")
   ingredientDiv.appendChild(ingredientUl);
 
@@ -73,10 +78,13 @@ const renderIngredients = (recipe) => {
 const renderNutritional = (recipe) => {
   const recipeDiv = document.querySelector(".recipe")
   let nutrients = recipe.totalNutrients;
+  let yield = recipe.yield;
 
   const nutrientsTitle = document.createElement("h3")
   nutrientsTitle.textContent = "Nutrions Facts:"
   recipeDiv.appendChild(nutrientsTitle)
+
+
 
   for (let key in nutrients) {
     let quantity = Math.round(nutrients[key].quantity)
@@ -104,9 +112,9 @@ searchButton.addEventListener("click", () => {
   num = 0;
   getRecipe(searchInput.value)
 
-  imgDiv.classList.add("blackBorder") //gives dividing black borders
-  ingredientDiv.classList.add("blackBorder")
-  recipeDiv.classList.add("blackBorder")
+  imgDiv.classList.add("blackBorder", "whiteDiv") //gives dividing black borders
+  ingredientDiv.classList.add("blackBorder", "whiteDiv")
+  recipeDiv.classList.add("blackBorder", "whiteDiv")
 })
 
 
