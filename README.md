@@ -86,8 +86,8 @@ You are **responsible** for scheduling time with your squad to seek approval for
 |Nov 10| Project Approval/Starting| Complete
 |Nov 12| Core Structure of HTML/CSS | Complete
 |Nov 13| Structure js/api rendering data| Complete
-|Nov 14| MVP completion | Incomplete
-|Nov 15| Post/MVP | Incomplete
+|Nov 14| MVP completion | Complete
+|Nov 15| Post/MVP | Complete
 |Nov 17| Presentations | Incomplete
 
 ## Priority Matrix
@@ -99,14 +99,14 @@ https://puu.sh/GLNTy/a18a7e0a30.png
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
 |Structuring HTML | M | 3hrs| 3hrs | 3hrs |
-|Basic styling CSS| L | 3hrs| 3hrs | 3hrs |
+|Basic styling CSS| L | 3hrs| 3hrs | 4hrs |
 |Setting/getting data from api | H | 3hrs| 3hrs | 5hrs |
 |JS structuring| H | 5hrs| 7hrs | 5hrs |
 |Rendering data recipe| H | 3hrs| 3hrs | 3hrs |
 |Rendering images| H | 2hrs | 3hrs | 2hrs |
-|Advanced styling| L | 3hrs | 3hrs | 5hrs |
-|Post/MVP| L | 8hrs | 10hrs | hrs |
-| Total | H | 30hrs| hrs | hrs |
+|Advanced styling| L | 3hrs | 3hrs | 6hrs |
+|Post/MVP| L | 8hrs | 10hrs | 8hrs |
+| Total | H | 30hrs| 33hrs | 36hrs |
 
 
 ## Code Snippet
