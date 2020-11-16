@@ -104,9 +104,9 @@ https://puu.sh/GLNTy/a18a7e0a30.png
 |JS structuring| H | 5hrs| 7hrs | 5hrs |
 |Rendering data recipe| H | 3hrs| 3hrs | 3hrs |
 |Rendering images| H | 2hrs | 3hrs | 2hrs |
-|Advanced styling| L | 3hrs | 3hrs | 8hrs |
+|Advanced styling| L | 3hrs | 3hrs | 6hrs |
 |Post/MVP| L | 8hrs | 10hrs | 8hrs |
-| Total | H | 30hrs| 33hrs | 38hrs |
+| Total | H | 30hrs| 33hrs | 36hrs |
 
 
 ## Code Snippet
