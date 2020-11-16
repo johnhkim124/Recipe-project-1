@@ -181,6 +181,7 @@ ul {
   color: white;
   justify-content: center;
   font-size: 11px;
+  max-width: 1500px;
   width: 100%;
   text-align: center;
   background-color: rgba(86, 86, 86, 0.5);
