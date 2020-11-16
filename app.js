@@ -8,7 +8,6 @@ const getRecipe = async (foodSearch) => {
     const response = await axios.get(url);
     console.log(response);
     let searched = response.data.q;
-    // console.log(searched)
 
     let recipe = response.data.hits[num].recipe
     console.log(recipe);
@@ -22,10 +21,8 @@ const getRecipe = async (foodSearch) => {
   }
 }
 
-// getRecipe("fried pickles")
 
-//make function that renders data
-
+//renders imgs
 const renderImg = (recipe) => {
   const recipeImageDiv = document.querySelector(".recipeImg")
   const foodTitleDiv = document.querySelector(".foodTitle")
@@ -40,12 +37,11 @@ const renderImg = (recipe) => {
   recipeImg.classList.add("imgStyle");
 
   recipeImageDiv.append(recipeImg);
-  // console.log(recipeImg)
 
 }
-
+//renders ingredients
 const renderIngredients = (recipe) => {
-  // const ingredientUl = document.querySelector("ul")
+
   const ingredientDiv = document.querySelector(".ingredients")
 
   let ingredients = document.createElement("h3");
@@ -76,7 +72,7 @@ const renderIngredients = (recipe) => {
   ingredientDiv.appendChild(instructions)
 
 }
-
+//renders nutritions
 const renderNutritional = (recipe) => {
   const recipeDiv = document.querySelector(".recipe")
   let nutrients = recipe.totalNutrients;
@@ -88,13 +84,8 @@ const renderNutritional = (recipe) => {
   nutrientTitleDiv.appendChild(nutrientsTitle)
   recipeDiv.prepend(nutrientTitleDiv)
 
-
-
   for (let key in nutrients) {
     let quantity = Math.round(nutrients[key].quantity)
-    // console.log(nutrients[key].label)
-    // console.log(nutrients[key].quantity)
-    // console.log(nutrients[key].unit)
 
     let nutrientsP = document.createElement("p")
     nutrientsP.textContent = `${nutrients[key].label}: ${quantity} ${nutrients[key].unit}`
@@ -107,22 +98,20 @@ const renderNutritional = (recipe) => {
 const searchButton = document.querySelector("#search")
 const searchInput = document.querySelector("input")
 
+
 searchButton.addEventListener("click", () => {
   const imgDiv = document.querySelector(".recipeImg");
   const ingredientDiv = document.querySelector(".ingredients")
   const recipeDiv = document.querySelector(".recipe")
 
-
   console.log(searchInput.value)
   num = 0;
   getRecipe(searchInput.value)
-
 
   ingredientDiv.classList.add("blackBorder", "whiteDiv")
   recipeDiv.classList.add("blackBorder", "whiteDiv")
 
 })
-
 
 const nextButton = document.querySelector("#next")
 
