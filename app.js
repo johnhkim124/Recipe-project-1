@@ -11,7 +11,7 @@ const getRecipe = async (foodSearch) => {
 
     let recipe = response.data.hits[num].recipe
     console.log(recipe);
-    removeImage();
+    removeContent();
     renderImg(recipe);
     renderIngredients(recipe);
     renderNutritional(recipe)
@@ -89,6 +89,7 @@ const renderNutritional = (recipe) => {
 
     let nutrientsP = document.createElement("p")
     nutrientsP.textContent = `${nutrients[key].label}: ${quantity} ${nutrients[key].unit}`
+    nutrientsP.classList.add("nutrientSpace")
 
     recipeDiv.appendChild(nutrientsP)
   }
@@ -125,7 +126,7 @@ nextButton.addEventListener("click", () => {
 })
 
 
-const removeImage = () => {
+const removeContent = () => {
   const imageDiv = document.querySelector(".recipeImg")
   const recipeDiv = document.querySelector(".recipe")
   const ingredientDiv = document.querySelector(".ingredients")
