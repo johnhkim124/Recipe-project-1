@@ -6,11 +6,9 @@ const getRecipe = async (foodSearch) => {
   const url = `https://api.edamam.com/search?q=${foodSearch}&app_id=c7450847&app_key=7c0a31766f9ea5c6b5de71b0693ce04d`
   try {
     const response = await axios.get(url);
-    console.log(response);
-    let searched = response.data.q;
 
     let recipe = response.data.hits[num].recipe
-    console.log(recipe);
+
     removeContent();
     renderImg(recipe);
     renderIngredients(recipe);
@@ -95,7 +93,7 @@ const renderNutritional = (recipe) => {
   }
 }
 
-
+//Event handlers
 const searchButton = document.querySelector("#search")
 const searchInput = document.querySelector("input")
 
@@ -125,7 +123,7 @@ nextButton.addEventListener("click", () => {
 
 })
 
-
+//Removes content
 const removeContent = () => {
   const imageDiv = document.querySelector(".recipeImg")
   const recipeDiv = document.querySelector(".recipe")

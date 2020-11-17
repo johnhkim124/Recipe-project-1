@@ -96,6 +96,7 @@ body {
   width: 70%;
   display: flex;
   justify-content: center;
+  margin-top:
 }
 
 ul {
@@ -132,6 +133,7 @@ ul {
   max-width: 400px;
   max-height: 400px;
   width: 100%;
+  margin-top: 10px;
 }
 
 .blackBorder{
