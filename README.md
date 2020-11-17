@@ -2,7 +2,7 @@
 
 ## Recipe Report 
 
-url
+live link: https://johnhkim124.github.io/Recipe-project-1/
 
 ## Project Description
 
